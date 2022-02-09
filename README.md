@@ -1,32 +1,13 @@
 ## Synapsis Frontend Developer Test
 
-First, run the development server:
+Untuk menjalankan program ini, anda harus melakukan beberapa tahap berikut:
+1. Melakukan git clone git@github.com:galihhhp/synapsis-test.git
+2. Menginstall dependencies dengan melakukan yarn install
+3. Kemudian menjalankan development server dengan melakukan yarn dev
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Bug:
+1. Delete by Id dan Update user masih belum berfungsi dengan baik, respon yang diberikan apabila dilakukan request sudah 200 atau success. Namun sampai sekarang belum bisa saya selesaikan kenapa tidak ada perubahan yang seharusnya. Terkadang, dapat dihapus, tapi lebih sering tidak dapat dihapus. Kemudian, beberapa data dapat diupdate valuenya namun beberapa tidak bisa. Dari bug ini saya merasa masalahnya adalah karena saya belum pernah hands on mongo db sehingga ini menjadi blocker.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Rencana yang tidak bisa terealisasikan:
+1. Saya ingin membuat fitur auth dimana user bisa sign in, sign up, dan forgot password menggunakan firebase auth. Namun, karena blocker dan sudah tidak ada waktu untuk mengerjakannya, fitur ini tidak dapat terealisasikan.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
